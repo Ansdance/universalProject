@@ -1,10 +1,13 @@
 package com.example.audit.dto;
 
-import lombok.*;
+import lombok.Data;
 
 @Data
-public class JustDTO {
+public class UpdateJustDTO {
+
     private String room;
     private String number;
     private String description;
+
+
 }

@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface JustRepository extends JpaRepository<Just, Long> {
+    Just getById(Long id);
 }
