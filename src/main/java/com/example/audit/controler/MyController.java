@@ -2,6 +2,8 @@ package com.example.audit.controler;
 
 import com.example.audit.dto.JustDTO;
 import com.example.audit.service.JustService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
@@ -16,9 +18,14 @@ public class MyController {
         this.justService = justService;
     }
 
+
+    private static final Logger log = LoggerFactory.getLogger(MyController.class);
+
+
     @RequestMapping(value = "/justdto", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     public String justDto(@RequestBody JustDTO justDTO) {
         String response = "Hello World AA! " + new Date();
+        log.info("Response => {}",response);
         justService.createJust(justDTO);
         return response;
     }

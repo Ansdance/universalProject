@@ -1,3 +1,5 @@
+## Liquibase , Postgresql, Swagger, logger
+
 create sequence HIBERNATE_SEQUENCE
 minvalue 100000
 maxvalue 9999999999999999
