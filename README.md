@@ -1,4 +1,4 @@
-## Liquibase , Postgresql, Swagger, logger
+## Liquibase , Postgresql, Swagger, logger, Mapstruck
 
 create sequence HIBERNATE_SEQUENCE
 minvalue 100000
